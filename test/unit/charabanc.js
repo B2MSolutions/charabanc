@@ -1,4 +1,4 @@
-var charabanc = require('../index.js'),
+var charabanc = require('../../index.js'),
     chai = require('chai'),
     sinon = require('sinon');
 
@@ -129,6 +129,6 @@ describe('charabanc', function() {
     });
   });
   it('can set transports', function() {
-    charabanc.setTransport(require('../lib/transport/memory'));
+    charabanc.setTransport(require('../../lib/transport/memory.js'));
   });
 });
